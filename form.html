@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table, th, td
+        {
+        border: 1px solid black;
+        }
+   </style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <h2 style="text-align: center;">HTML Form</h2>
+    <table style="width: auto;" >
+        <tr>
+            <th>Data</th>
+            <th>MetaData</th>
+        </tr>
+        <tr>
+            <td>
+            <label for="Name:">Name</label></td>
+           <td><input type="text" id="Name" name="Name"></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td><input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label></td>
+        </tr>
+
+        <tr>
+            <td><label for="DOB">Date Of Birth</label></td>
+            <td><input type="date" id="DOB" name="dob"></td>
+        </tr>
+
+        <tr>
+            <td><label for="Cities">City:</label></td>
+            <td><Select id="cities" name="City">
+                <option value="Select City">Select City</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Sukkur">Sukkur</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Rohri">Rohri</option>
+                <option value="Khairpur">Khairpur</option>
+                <option value="NawabShah">NawabShah</option>
+                <option value="RawalPindi">RawalPindi</option>
+                <option value="Multan">Multan</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Faisalabad">Faisalabad</option>
+            </Select> </td>
+        </tr>
+    
+        <td colspan="2"><label for="About Me">About Me</label></td></tr>
+        <tr><td colspan="2"><textarea id="About Me" name="AboutMe" row="50" cols="50"> Write Something about yourself here......</textarea></td></tr> 
+        <tr>
+           <td colspan="2"><label for="i agree for Terms & Conditions"> I Agree For Terms & Conditions</label>
+        <input type="checkbox">
+        </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: right;" colspan="2" ><button type="submit" value="Submit">Submit</button></td>
+        </tr>
+    </table>
+   
+</body>
+</html>
