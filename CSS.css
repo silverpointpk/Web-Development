@@ -1,31 +1,3 @@
-*{
-    margin: 0%;
-    padding: 0%;
+ul{
+    list-style:square;
 }
-/* unvisited Link */
-a:link{
-    color: red;
-}
-/* visited link */
-a:visited{
-    color: green;
-}
-/* Mouse over link */
-a:hover{
-    color: yellow;
-}
-/* selcted link */
-a:active{
-    color: blue;
-}
-.borderCss{
-    width: 500px;
-    height: inherit;
-    background-color: aquamarine;
-    border-color: black;
-    border-width: 5px;
-    
-    
-}
-    
-
