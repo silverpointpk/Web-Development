@@ -18,3 +18,14 @@ a:hover{
 a:active{
     color: blue;
 }
+.borderCss{
+    width: 500px;
+    height: inherit;
+    background-color: aquamarine;
+    border-color: black;
+    border-width: 5px;
+    
+    
+}
+    
+
