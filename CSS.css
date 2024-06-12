@@ -2,22 +2,19 @@
     margin: 0%;
     padding: 0%;
 }
-
-#fontCss
-{
-    font-family: "Honk", system-ui;
-    font-variant: small-caps;
-    font-size: 2em;
-    font-style: italic;
-    font-weight: bold;  
+/* unvisited Link */
+a:link{
+    color: red;
 }
-#textcss{
-    font-family:"Honk", system-ui;
-    color: blueviolet;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    direction: rtl;
-    text-indent: 50px;
-    text-align: center;
-    text-transform: uppercase;
+/* visited link */
+a:visited{
+    color: green;
+}
+/* Mouse over link */
+a:hover{
+    color: yellow;
+}
+/* selcted link */
+a:active{
+    color: blue;
 }
