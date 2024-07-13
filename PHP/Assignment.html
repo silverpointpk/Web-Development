@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management</title>
 </head>
-
 <body>
     <h1>Library Management</h1>
 
     <!-- Form to Add a New Book -->
     <h2>Add a New Book</h2>
-
-    <form action="Library_management.php" method="post">
-
+    <form action="Assignment.php" method="post">
         <input type="hidden" name="form_type" value="add_book">
+        <label for="title">Book Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
 
-        <label for="Title">Book Title:</label><br>
-        <input type="text" name="Title" id="Title" required><br><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
 
-        <label for="Author">Author:</label><br>
-        <input type="text" name="Author" id="Author" required><br><br>
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre" required><br><br>
 
-        <label for="Genre">Genre:</label><br>
-        <input type="text" name="Genre" id="Genre" required><br><br>
+        <label for="year">Publication Year:</label><br>
+        <input type="number" id="year" name="year" required><br><br>
 
-        <label for="Year">Publication Year:</label><br>
-        <input type="text" name="Year" id="Year" required><br><br>
-
-        <input type="submit" value="Add book">
-
+        <input type="submit" value="Add Book">
     </form>
 
     <hr>
 
     <!-- Form to Search for Books by Title or Author -->
-
-    <h2>SearchBooks</h2>
-
-    <form action="Library_managment.php" method="Get">
-
+    <h2>Search Books</h2>
+    <form action="Assignment.php" method="get">
         <input type="hidden" name="form_type" value="search_books">
-
         <label for="searchTitle">Search by Title:</label><br>
         <input type="text" id="searchTitle" name="searchTitle"><br><br>
 
@@ -50,8 +40,6 @@
         <input type="text" id="searchAuthor" name="searchAuthor"><br><br>
 
         <input type="submit" value="Search">
-
     </form>
 </body>
-
 </html>
