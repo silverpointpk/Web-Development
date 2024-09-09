@@ -39,7 +39,7 @@
         <label for="male">Male</label> <br>
 
         <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">female</label><br><br>
+        <label for="female">Female</label><br><br>
         
         <label for="Profile picture">Profile picture</label><br>
         <input type="file" id="Profile picture" name="Profile picture" accept=".jpg, .png" required><br><br>
