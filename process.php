@@ -21,8 +21,8 @@ if (isset($_POST['timezone'])) {
     exit();
 }
 //Task2:Form Handling-Validate and Process form Data
-if (isset($_POST['submit.form'])) {
-    $Full_Name = $_POST['$Full_Name'];
+if (isset($_POST['submit'])) {
+    $Full_Name = $_POST['Full_Name'];
     $Email = $_POST['Email'];
     $dob = $_POST['dob'];
     $gender = $_POST['gender'];
@@ -49,25 +49,23 @@ if (isset($_POST['submit.form'])) {
             $errors[] = "Profile picture must not exceed 2MB";
         }
     }
-if (empty($errors)){
-$user_data = "Name: $Full_Name, Email: $email, DOB: $dob\n";
-file_put_contents('users.txt', $user_data);
+    if (empty($errors)) {
+        $user_data = "Name: $Full_Name, Email: $Email, DOB: $dob\n";
+        file_put_contents('users.txt', $user_data);
 
-//Display user information and Uploaded file
-echo"<h2>Registration Successful</h2>";
-echo"<p>Full Name: $Full_Name</p>";
-echo"<p>Email:$email</p>";
-echo"<p>Date of Birth: $dob</p>";
-echo"<p>Gender: $gender</p>";
-echo "<p>Profile Picture: <img src='$upload_path' alt='Profile Picture' width='150'></p>";
+        //Display user information and Uploaded file
+        echo "<h2>Registration Successful</h2>";
+        echo "<p>Full Name: $Full_Name</p>";
+        echo "<p>Email:$Email</p>";
+        echo "<p>Date of Birth: $dob</p>";
+        echo "<p>Gender: $gender</p>";
+        echo "<p>Profile Picture: <img src='c:\Users\Maryam Shaikh\OneDrive\Pictures\Pic.jpg' alt='Profile Picture' width='91.3 KB'></p>";
         echo "<a href='Assignment3.php'>Go Back</a>";
-}
-else{
-    echo"<h2>Errors:</h2>";
-    foreach ($errors as $errors){
-        echo"<p>$error</p>";
+    } else {
+        echo "<h2>Errors:</h2>";
+        foreach ($errors as $errors) {
+            echo "<p>$error</p>";
+        }
+        echo "<a href='Assignment.php'>Go Back</a>";
     }
-    echo"<a href='Assignment.php'>Go Back</a>";
 }
-}
-?>
